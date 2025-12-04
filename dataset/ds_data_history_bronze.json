@@ -1,0 +1,41 @@
+{
+	"name": "ds_data_history_bronze",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_movie_history_adls",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"ds_file_date": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@dataset().ds_file_date",
+					"type": "Expression"
+				},
+				"fileSystem": "bronze"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"countryId": {
+					"type": "integer"
+				},
+				"countryIsoCode": {
+					"type": "string"
+				},
+				"countryName": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

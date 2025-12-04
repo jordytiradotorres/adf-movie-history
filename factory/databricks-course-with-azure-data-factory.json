@@ -1,0 +1,9 @@
+{
+	"name": "databricks-course-with-azure-data-factory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d05a5ada-1b3a-4d8e-887b-2cef3e32868d",
+		"tenantId": "e82cbba9-ead5-4629-9fe8-3d0fce13c7d8"
+	}
+}

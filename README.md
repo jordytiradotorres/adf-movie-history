@@ -63,6 +63,7 @@ El proyecto implementa las mejores prácticas de arquitectura moderna de datos, 
 
 ## 📁 Estructura del Proyecto
 
+```yaml
 adf-movie-history/
 ├── dataset/ # Definiciones de datasets
 │ ├── ds_data_history_bronze/ # Dataset de capa Bronze
@@ -90,6 +91,7 @@ adf-movie-history/
 │
 ├── README.md # Este archivo
 └── publish_config.json # Configuración de publicación
+```
 
 
 ## 📋 Requisitos Previos
